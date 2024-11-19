@@ -7,6 +7,9 @@ import LoginScreen from './Auth/LoginScreen';
 import HomeScreen from './Auth/HomeScreen';
 import DashboardScreen from './Auth/DashboardScreen';
 import MedicineDetailsScreen from './Auth/MedicineDetails';
+import CartScreen from './Auth/CartScreen';
+import MainScreen from './Auth/MainScreen';
+import SearchByText from './Auth/SearchByText';
 
 const Stack = createStackNavigator();
 
@@ -20,6 +23,9 @@ export default function App() {
         <Stack.Screen name="Login" component={LoginScreen} />
         <Stack.Screen name="Dashboard" component={DashboardScreen} />
       <Stack.Screen name="MedicineDetails" component={MedicineDetailsScreen} />
+      <Stack.Screen name="Cart" component={CartScreen} />
+      <Stack.Screen name="Main" component={MainScreen} />
+      <Stack.Screen name="SearchByText" component={SearchByText} />
       </Stack.Navigator>
     </NavigationContainer>
   );
